@@ -37,7 +37,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
     @Override
     public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.tab_fragment1, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_tab_fragment1, parent, false);
 
         ExampleViewHolder viewHolder = new ExampleViewHolder(view);
         return viewHolder;

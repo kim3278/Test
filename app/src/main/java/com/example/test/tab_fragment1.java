@@ -1,5 +1,10 @@
 package com.example.test;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 
-public class TabFragment1 extends Fragment {
+class TabFragment1 extends Fragment {
     ArrayList<item> itemArrayList;
 
     public void onCreate(Bundle savedInstanceState){
@@ -31,7 +36,7 @@ public class TabFragment1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.tab_fragment1, container, false);
+        View view = inflater.inflate(R.layout.activity_tab_fragment1, container, false);
 
         RecyclerView myrv = view.findViewById(R.id.recyclerView);
         MyAdapter myAdapter = new MyAdapter(itemArrayList);
