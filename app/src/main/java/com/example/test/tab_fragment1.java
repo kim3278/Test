@@ -37,6 +37,7 @@ class TabFragment1 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_tab_fragment1, container, false);
+
         RecyclerView myrv = view.findViewById(R.id.recyclerView);
         MyAdapter myAdapter = new MyAdapter(itemArrayList);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
