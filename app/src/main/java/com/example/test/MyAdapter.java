@@ -59,5 +59,4 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
         return mDataset.size();
     }
 
-
 }
